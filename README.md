@@ -39,6 +39,14 @@ In the bit host text field, you have to enter the base URL of your instance. The
 
 This address will be checked, so no worry about entering the wrong one. The disadvantage of this is that your server has to be running even if you don't want to chat with it at that moment. If you set the host once, and your server is offline, the requests will fail, but the host will stay saved if you don't change it yourself. Don't worry, just go into the side menu and click the settings button to change it.
 
+With the release v1.0.1, option for adding Custom Header was added. Custom header needs to be a json object in the format:
+ {
+  "Authorization": "Bearer your-token-here",
+  "Content-Type": "application/json",
+  "X-Custom-Header": "custom-value",
+  "User-Agent": "YourApp/1.0.0"
+};
+
 That's it, you can now just chat. Enter a message into the box at the bottom and click the send icon.
 
 ## Side Menu
